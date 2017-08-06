@@ -44,9 +44,12 @@ button {
   height: 100%;
   background-color: #77BA99;
   color: white;
-
 }
 
+button:hover {
+  background-color: #D33F49;
+  color: #D7C0D0;
+}
 input {
   width: calc(75% - 10px);
   height: 100%;
