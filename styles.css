@@ -1,0 +1,57 @@
+/*
+Colors
+#D33F49
+#D7C0D0
+#EFF0D1
+#77BA99
+#262730*/
+
+body {
+background-color: #262730;
+}
+h1 {
+  color: white;
+  width: 327px;
+  font-size: 30px;
+  background: none;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: solid 2px #77BA99;
+}
+.wrapper {
+  width: 327px;
+  height: 403px;
+  background: black;
+  border-radius: 3px;
+  margin: auto;
+  display: flex;
+  /*text-align: center;*/
+}
+form {
+  width: 100%;
+  height: 100%;
+}
+section {
+  width: calc(100%-10px);
+  height: 20%;
+  margin-right: none;
+  display: flex;
+}
+
+button {
+  width: 25%;
+  height: 100%;
+  background-color: #77BA99;
+  color: white;
+
+}
+
+input {
+  width: calc(75% - 10px);
+  height: 100%;
+  padding-right: 6px;
+  text-align: right;
+  display: flex;
+  background-color: #EFF0D1;
+}
