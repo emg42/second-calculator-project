@@ -1,5 +1,8 @@
-let displayVal = document.querySelector('body').querySelector(".wrapper").querySelector(".calculator").querySelector(".row-1").querySelector("#display").value;
 
+const buttons = document.querySelectorAll('button');
+const display = document.querySelector('.display');
+console.log(buttons);
+let input ="";
 function calcAdd () {
 
 }
@@ -13,5 +16,16 @@ function calcMult (){
 }
 
 function calcDiv (){
+
+}
+
+function disValue () {
+
+}
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', userInput)
+}
+
+function userInput () {
 
 }
