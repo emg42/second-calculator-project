@@ -25,4 +25,5 @@ function thisEquals() {
 
 }
 
-equals
+equalsBtn.addEventListener(click,);
+clrBtn.addEventListener(click,);
