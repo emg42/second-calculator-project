@@ -11,10 +11,12 @@ for (let i = 0; i < buttons.length; i++) {
 }
 
 
-
+function thisCalc(){
+  input = this.va
+}
 
 function showInput(string){
-  display.textContent
+  input = display.textContent
 }
 
 function clrScreen() {
@@ -22,6 +24,8 @@ input="";
 showInput(input);
 }
 function thisEquals() {
+input = eval(input);
+input = display.textContent;
 
 }
 
