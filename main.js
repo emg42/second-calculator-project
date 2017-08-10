@@ -5,6 +5,9 @@ const equalBtn = document.querySelector('#equals');
 const display = document.querySelector('#display');
 const plusBtn = document.querySelector('#plus');
 const minusBtn = document.querySelector('#minus');
+const divideBtn =
+document.querySelector('#divide');
+const timesBtn = document.querySelector('#times');
 
 
 const num7 = document.querySelector('#seven');
@@ -43,6 +46,13 @@ num0.addEventListener('click', numZero);
 
 plusBtn.addEventListener('click', numPlus);
 minusBtn.addEventListener('click', numMinus);
+timesBtn.addEventListener('click', numTimes);
+divideBtn.addEventListener('click', numDivide);
+
+equalBtn.addEventListener('click', equals);
+clrBtn.addEventListener('click', clears);
+
+
 
 function numPlus () {
   values += "+";
@@ -51,6 +61,14 @@ function numPlus () {
 
 function numMinus () {
   values += "-";
+  display.textContent =  values;
+}
+function numDivide () {
+  values += "/";
+  display.textContent =  values;
+}
+function numTimes () {
+  values += "*";
   display.textContent =  values;
 }
 
@@ -98,26 +116,12 @@ function numPlus() {
   values += "+";
   display.textContent =  values;
 }
-// function numMinus() {
-//   values += "+";
-//   display.textContent =  values;
-// }
-// function numPlus() {
-//   values += "-";
-//   display.textContent =  values;
-// }
 
-// function numClr() {
-//   values += "";
-//   display.textContent =  values;
-// }
-// function numEquals
-
-
-
-// function displayInput (){
-// let value = this.textContent;
-// valuesTogether += value;
-// }
-
-// calcBtns.addEventListener('click', displayInput);
+function equals () {
+  eval(values);
+  display.innerHTML = eval(values);
+}
+function clears () {
+  values = "";
+  display.innerHTML = "";
+}
