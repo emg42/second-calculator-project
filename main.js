@@ -8,7 +8,7 @@ const minusBtn = document.querySelector('#minus');
 const divideBtn =
 document.querySelector('#divide');
 const timesBtn = document.querySelector('#times');
-
+const decBtn = document.querySelector('#decimal');
 
 const num7 = document.querySelector('#seven');
 const num8 = document.querySelector('#eight');
@@ -43,6 +43,8 @@ num1.addEventListener('click', numOne);
 num2.addEventListener('click', numTwo);
 num3.addEventListener('click', numThree);
 num0.addEventListener('click', numZero);
+
+decBtn.addEventListener('click', decimal);
 
 plusBtn.addEventListener('click', numPlus);
 minusBtn.addEventListener('click', numMinus);
@@ -124,4 +126,9 @@ function equals () {
 function clears () {
   values = "";
   display.innerHTML = "";
+}
+
+function decimal () {
+  values += ".";
+  display.textContent = values;
 }
