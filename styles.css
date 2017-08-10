@@ -28,7 +28,7 @@ h1 {
   display: flex;
   /*text-align: center;*/
 }
-form {
+.calculator {
   width: 100%;
   height: 100%;
 }
@@ -50,11 +50,14 @@ button:hover {
   background-color: #D33F49;
   color: #D7C0D0;
 }
-input {
+#display {
   width: calc(75% - 10px);
   height: 100%;
   padding-right: 6px;
   text-align: right;
   display: flex;
   background-color: #EFF0D1;
+  align-items: flex-end;
+  justify-content: flex-end;
+
 }

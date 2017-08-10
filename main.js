@@ -16,30 +16,47 @@ const num3 = document.querySelector('#three');
 const num0 = document.querySelector('#zero');
 
 console.log(calcBtns);
-let userInput ="";
 
-let valuesTogether ="";
-
-let button ="";
-
-num7.addEventListener('click', calcValues);
-num8.addEventListener('click', calcValues);
-num9.addEventListener('click', calcValues);
-num4.addEventListener('click', calcValues);
-num5.addEventListener('click', calcValues);
-num6.addEventListener('click', calcValues);
-num1.addEventListener('click', calcValues);
-num2.addEventListener('click', calcValues);
-num3.addEventListener('click', calcValues);
-num0.addEventListener('click', calcValues);
+let values ="";
 
 
-function calcValues() {
-  userInput = event.target.textContent;
-  valuesTogether += userInput;
-  display = valuesTogether;
+
+// function calcValues() {
+//   userInput = this.textContent;
+//   valuesTogether += userInput;
+//   display.textContent = valuesTogether;
+// }
+
+// num7.addEventListener('click', calcValues);
+// num8.addEventListener('click', calcValues);
+// num9.addEventListener('click', calcValues);
+// num4.addEventListener('click', calcValues);
+// num5.addEventListener('click', calcValues);
+// num6.addEventListener('click', calcValues);
+num1.addEventListener('click', numOne);
+// num2.addEventListener('click', calcValues);
+// num3.addEventListener('click', calcValues);
+// num0.addEventListener('click', calcValues);
+
+
+
+function numOne (){
+  values += "1";
+  display.textContent =  values;
 }
-
+function numTwo
+// function numThree
+// function numFour
+// function numFive
+// function numSix
+// function numSeven
+// function numEight
+// function numNine
+// function numPlus
+// function numClr
+// function numEquals
+// function numMinus
+// function numPlus
 
 
 // function displayInput (){
