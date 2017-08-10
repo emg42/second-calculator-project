@@ -15,7 +15,7 @@ const num2 = document.querySelector('#two');
 const num3 = document.querySelector('#three');
 const num0 = document.querySelector('#zero');
 
-console.log(calcBtns);
+console.log(num6);
 
 let values ="";
 
@@ -27,16 +27,16 @@ let values ="";
 //   display.textContent = valuesTogether;
 // }
 
-// num7.addEventListener('click', calcValues);
-// num8.addEventListener('click', calcValues);
-// num9.addEventListener('click', calcValues);
-// num4.addEventListener('click', calcValues);
-// num5.addEventListener('click', calcValues);
-// num6.addEventListener('click', calcValues);
+num7.addEventListener('click', numSeven);
+// num8.addEventListener('click', numEight);
+// num9.addEventListener('click', numNine);
+num4.addEventListener('click', numFour);
+num5.addEventListener('click', numFive);
+num6.addEventListener('click', numSix);
 num1.addEventListener('click', numOne);
 num2.addEventListener('click', numTwo);
 num3.addEventListener('click', numThree);
-// num0.addEventListener('click', calcValues);
+num0.addEventListener('click', numZero);
 
 
 
@@ -56,6 +56,10 @@ function numFour() {
   values += "4";
   display.textContent =  values;
 }
+function numZero () {
+  values += "0";
+  display.textContent =  values;
+}
 function numFive() {
   values += "5";
   display.textContent =  values;
@@ -68,26 +72,26 @@ function numSeven() {
   values += "7";
   display.textContent =  values;
 }
-function numEight() {
-  values += "8";
-  display.textContent =  values;
-}
-function numNine() {
-  values += "9";
-  display.textContent =  values;
-}
-function numPlus() {
-  values += "+";
-  display.textContent =  values;
-}
-function numMinus() {
-  values += "+";
-  display.textContent =  values;
-}
-function numPlus() {
-  values += "-";
-  display.textContent =  values;
-}
+// function numEight() {
+//   values += "8";
+//   display.textContent =  values;
+// }
+// function numNine() {
+//   values += "9";
+//   display.textContent =  values;
+// }
+// function numPlus() {
+//   values += "+";
+//   display.textContent =  values;
+// }
+// function numMinus() {
+//   values += "+";
+//   display.textContent =  values;
+// }
+// function numPlus() {
+//   values += "-";
+//   display.textContent =  values;
+// }
 
 // function numClr() {
 //   values += "";
