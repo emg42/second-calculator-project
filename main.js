@@ -1,8 +1,11 @@
 const clrBtn = document.querySelector('#clears');
 const equalBtn = document.querySelector('#equals');
 
-const calcBtns = document.querySelectorAll('.calc-button');
+// const calcBtns = document.querySelectorAll('.calc-button');
 const display = document.querySelector('#display');
+const plusBtn = document.querySelector('#plus');
+const minusBtn = document.querySelector('#minus');
+
 
 const num7 = document.querySelector('#seven');
 const num8 = document.querySelector('#eight');
@@ -28,8 +31,8 @@ let values ="";
 // }
 
 num7.addEventListener('click', numSeven);
-// num8.addEventListener('click', numEight);
-// num9.addEventListener('click', numNine);
+num8.addEventListener('click', numEight);
+num9.addEventListener('click', numNine);
 num4.addEventListener('click', numFour);
 num5.addEventListener('click', numFive);
 num6.addEventListener('click', numSix);
@@ -38,7 +41,18 @@ num2.addEventListener('click', numTwo);
 num3.addEventListener('click', numThree);
 num0.addEventListener('click', numZero);
 
+plusBtn.addEventListener('click', numPlus);
+minusBtn.addEventListener('click', numMinus);
 
+function numPlus () {
+  values += "+";
+  display.textContent =  values;
+}
+
+function numMinus () {
+  values += "-";
+  display.textContent =  values;
+}
 
 function numOne (){
   values += "1";
@@ -72,18 +86,18 @@ function numSeven() {
   values += "7";
   display.textContent =  values;
 }
-// function numEight() {
-//   values += "8";
-//   display.textContent =  values;
-// }
-// function numNine() {
-//   values += "9";
-//   display.textContent =  values;
-// }
-// function numPlus() {
-//   values += "+";
-//   display.textContent =  values;
-// }
+function numEight() {
+  values += "8";
+  display.textContent =  values;
+}
+function numNine() {
+  values += "9";
+  display.textContent =  values;
+}
+function numPlus() {
+  values += "+";
+  display.textContent =  values;
+}
 // function numMinus() {
 //   values += "+";
 //   display.textContent =  values;
